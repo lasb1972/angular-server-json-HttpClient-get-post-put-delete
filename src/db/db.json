@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "jr@hotmail.com",
+      "nombre": "Jhon",
+      "apellido": "Ramirez",
+      "avatar": "https://raw.githubusercontent.com/pixelastic/fakeusers/master/pictures/men/2.jpg",
+      "id": 1
+    },
+    {
+      "email": "jp@gmail.com",
+      "nombre": "Julio",
+      "apellido": "Perez",
+      "avatar": "https://raw.githubusercontent.com/pixelastic/fakeusers/master/pictures/men/33.jpg",
+      "id": 2
+    },
+    {
+      "email": "kiarasmith@gmail.com",
+      "nombre": "Kiara ",
+      "apellido": "Smith",
+      "avatar": "https://raw.githubusercontent.com/pixelastic/fakeusers/master/pictures/women/77.jpg",
+      "id": 4
+    },
+    {
+      "email": "cc@gmail.com",
+      "nombre": "Chin",
+      "apellido": "Chan",
+      "avatar": "https://raw.githubusercontent.com/pixelastic/fakeusers/master/pictures/women/17.jpg",
+      "id": 5
+    }
+  ]
+}

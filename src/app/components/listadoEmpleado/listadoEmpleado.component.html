@@ -1,0 +1,38 @@
+<div class="container mt-3">
+  <div class="card  mb-3" >      
+
+      <div class="card-body">
+          <div class="row">
+             <div class="col">
+                <span>Listado de Empleados</span>
+             </div>  
+             <div class="col"  style="display: flex;justify-content: right; align-items: center;">
+                <button class="btn btn-primary btn-lg" routerLink="/rutaAgregarEmpleado">Agregar</button>
+             </div> 
+          </div>
+          <span class="badge bg-danger" style="width: 100%;" *ngIf="mensaje" >NO HAY ELEMENTOS QUE MOSTRAR</span> 
+          <div class="row  mt-3" style="display: flex; justify-content: center;/*background:yellow;*/">
+            <div class="col-1 mb-3" *ngFor="let empleado of empleados" style="width: 14rem;/*background:green*/">
+                <div class="card">
+                  <div class="marcoImg">
+                    <img class="card-img-top" src={{empleado.avatar}} alt="..."
+                    style="width: 100px;" >
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">{{empleado.nombre}} {{empleado.apellido}}</h5>
+                    <p class="card-text">{{empleado.email}}</p>
+                  </div>
+                  <div class="card-footer row" style="margin: 0;">
+                    <div class="col" style="padding: 0; text-align: center;">
+                       <i class="fas fa-edit fa-lg text-info" [routerLink]="['/editarEmpleado',empleado.id]"  style="margin-right:10px;cursor:pointer"></i>
+                       <i class="fas fa-trash fa-lg text-danger"   (click)="deleteEmpleado(empleado.id)"    style="cursor:pointer"></i>
+                    </div>
+                  </div> 
+                </div>      
+            </div>         
+          </div>
+                    
+
+      </div>
+  </div>
+</div>
