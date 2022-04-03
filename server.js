@@ -6,6 +6,13 @@ function requireHTTPS(req, res, next) {
   next();
 }
 
+const express = require('express');
+const app = express();
+
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("src/db/db.json");
+server.use(router);
 
 app.use(requireHTTPS);
 app.use(express.static('./dist/xxx'));    
