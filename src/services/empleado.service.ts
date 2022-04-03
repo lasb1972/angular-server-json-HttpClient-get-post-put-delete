@@ -15,7 +15,8 @@ export class EmpleadoService{
 
     getEmpleados():Observable<Empleado[]>{
        // return this.http.get('https://reqres.in/api/users')     //ACA ESTOY ACCEDIENDO DIRECTAMENTE A LA API
-       return this.http.get<Empleado[]>('http://localhost:3001/users')
+       //return this.http.get<Empleado[]>('http://localhost:3001/users')
+       return this.http.get<Empleado[]>('/users')
     }
 
     addEmpleados(e:Empleado):Observable<Empleado>{
